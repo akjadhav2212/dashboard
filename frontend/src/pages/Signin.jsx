@@ -10,7 +10,7 @@ const Signin = () => {
     const navigate = useNavigate();
     const handleSignIn = async () => {
         try{
-            const response = await axios.post('http://localhost:3000/api/v1/signin',{username:email,password:password});
+            const response = await axios.post('https://dashboard-b5yd.onrender.com/api/v1/signin',{username:email,password:password});
             if(response.data.success){
                 localStorage.setItem('jwtToken',response.data.token);
                 setTimeout(()=>navigate('/'),2000);

@@ -13,7 +13,7 @@ export default function(){
     const navigate = useNavigate();
     const token = 'Bearer '+localStorage.getItem('jwtToken');
     useEffect(()=>{
-        axios.get('http://localhost:3000/api/v1/authuser',{headers:{'Authorization':token}})
+        axios.get('https://dashboard-b5yd.onrender.com/api/v1/authuser',{headers:{'Authorization':token}})
         .then((response)=>{
             if(!response.data.success){
                 navigate('/signin');
@@ -25,7 +25,7 @@ export default function(){
     },[]);
     async function handler(){
         try{
-            const response = await axios.get('http://localhost:3000/api/v1/getproduct',{headers:{
+            const response = await axios.get('https://dashboard-b5yd.onrender.com/api/v1/getproduct',{headers:{
                 'Authorization':token
             }});
             if(!response.data.success)throw new Error(response.data.message);

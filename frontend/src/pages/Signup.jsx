@@ -12,7 +12,7 @@ const Signup = () => {
   const handleSignUp = async () => {
     // Add your sign-up logic here, such as sending a request to your backend
     try{
-        const response =await axios.post('http://localhost:3000/api/v1/signup',{
+        const response =await axios.post('https://dashboard-b5yd.onrender.com/api/v1/signup',{
             username:email,
             firstname:firstName,
             lastname:lastName,
