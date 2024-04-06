@@ -30,19 +30,22 @@ Product Sales Dashboard is a full-stack web application built using the MERN (Mo
 ### Installation
 
 1. Clone the repository:
-
+<pre><code>
 git clone https://github.com/akjadhav2212/dashboard.git
+</pre></code>
 
 2. Build the docker image:
-
+<pre><code>
 docker build -t salesdash .
+</pre></code>
 
 3. Run the docker container:
 
 Provide a MongoDB connection string in the MONGO_DB_URI environment variable, PORT is set to 3000 and JWT_SECRET set as per your choice.
 
+<pre><code>
 docker run -d -e PORT=3000 -e MONGO_DB_URI="mongodb+srv://akjadhav2212:Aakash2212@cluster0.qhmsgk5.mongodb.net/dashboard" -e JWT_SECRET="ITISECRET" -p 3000:3000 salesdash
-
+</pre></code>
 
 8. Access the application at `http://localhost:3000` in your browser.
 
