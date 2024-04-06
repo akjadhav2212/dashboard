@@ -4,7 +4,7 @@ Product Sales Dashboard is a full-stack web application built using the MERN (Mo
 
 ## Live Link 
 - Note: Wait for 50secs to load.
-- Website:[https://https://dashboard-b5yd.onrender.com/](https://dashboard-b5yd.onrender.com/)
+- Website:[https://dashboard-b5yd.onrender.com/](https://dashboard-b5yd.onrender.com/)
 
 ## Tech Stack
 
