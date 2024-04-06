@@ -58,9 +58,8 @@ export default function(){
                 <h1>Category</h1>
                 <h3>{product.category}</h3>
             </div>
-            <div className='hover:bg-slate-100 flex flex-col justify-center items-center border rounded-lg shadow-xl sm:p-10 m-2'>
-                <button onClick={handler}>Get Random Product</button>
-            </div>
+            <button className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 m-2' onClick={handler}>Get Random Product</button>
+            
         </div>
     </div>
     <div className='mt-10'>
